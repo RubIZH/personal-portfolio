@@ -10,10 +10,12 @@ module.exports = {
     './nuxt.config.{js,ts}',
   ],
   theme: {
+    fontFamily: {
+      serif: ['ITC Garamond'],
+    },
     extend: {
       fontFamily: {
         sans: ['Rajdhani', ...defaultTheme.fontFamily.sans],
-        serif: ['ITC-Garamond-Light-Narrow'],
       },
       maxWidth: {
         '8xl': '88rem',
