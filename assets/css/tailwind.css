@@ -8,3 +8,15 @@
     @apply bg-white dark:bg-black antialiased text-gray-500 dark:text-white;
   }
 }
+
+@font-face {
+  font-family: 'ITC Garamond';
+  src: local('ITC Garamond Light Narrow'), local('ITC-Garamond-Light-Narrow'),
+    url('fonts/ITCGaramondStd-LtNarrow.woff2') format('woff2'),
+    url('fonts/ITCGaramondStd-LtNarrow.woff') format('woff'),
+    url('fonts/ITCGaramondStd-LtNarrow.ttf') format('truetype'),
+    url('fonts/ITCGaramondStd-LtNarrow.eot') format('embedded-opentype'),
+    url('fonts/ITCGaramondStd-LtNarrow.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
