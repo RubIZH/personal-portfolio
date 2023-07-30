@@ -19,7 +19,7 @@
           mx-auto
           pt-20
           sm:pt-24
-          lg:pt-60
+          lg:pt-40
           flex
           justify-center
         "
@@ -27,7 +27,7 @@
         <div class="flex flex-col space-y-12 text-amethyst-900 relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-48 h-48 -mt-24 absolute to-0 right-0"
+            class="w-48 h-48 -mr-48 absolute to-0 right-0"
             viewBox="0 0 210 200"
             fill="none"
           >
@@ -157,9 +157,21 @@
                   </linearGradient>
                 </defs>
               </svg>
-              <div
-                class="h-28 w-28 bg-amethyst-400 relative rounded-full"
-              ></div>
+              <div class="h-28 w-28 relative">
+                <div
+                  class="
+                    -top-[3rem]
+                    -left-[2.5rem]
+                    top-0
+                    bg-contain
+                    absolute
+                    bg-no-repeat bg-center
+                    w-52
+                    h-52
+                    bg-[url('assets/images/me.png')]
+                  "
+                ></div>
+              </div>
             </div>
 
             <div class="flex flex-col space-y-6">
