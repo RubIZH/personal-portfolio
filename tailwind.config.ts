@@ -11,6 +11,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern-light':
+          "url('assets/images/background-stripes-light.jpg')",
+        'hero-pattern-dark': "url('assets/images/background-stripes-dark.jpg')",
+      },
       fontFamily: {
         sans: ['Rajdhani', ...defaultTheme.fontFamily.sans],
         serif: ['ITC Garamond', ...defaultTheme.fontFamily.serif],

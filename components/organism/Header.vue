@@ -1,6 +1,7 @@
 <template>
   <header class="relative w-full">
-    <div class="px-4 sm:px-6 md:px-8">
+    <div class="absolute w-full h-full bg-hero-pattern-light"></div>
+    <div class="px-4 sm:px-6 md:px-8 relative">
       <div
         class="relative max-w-screen-xl mx-auto pt-20 sm:pt-24 lg:pt-60 flex"
       >

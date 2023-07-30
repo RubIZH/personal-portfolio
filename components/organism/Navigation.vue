@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-40 w-full flex items-center justify-center">
+  <div class="sticky top-0 z-40 w-full flex items-center justify-center">
     <nav
       class="
         px-6
@@ -116,7 +116,7 @@
       </div>
       <MoleculeThemeToggle />
     </nav>
-  </header>
+  </div>
 </template>
 
 <script setup></script>
