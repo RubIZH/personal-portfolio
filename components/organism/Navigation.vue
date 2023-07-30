@@ -108,7 +108,6 @@
               top-0
               bg-gradient-to-b
               from-white from-10%
-              to-clear to-80%
               dark:opacity-40
             "
           ></div>

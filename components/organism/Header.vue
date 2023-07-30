@@ -1,114 +1,33 @@
 <template>
   <header class="relative w-full">
-    <div class="absolute w-full h-full bg-hero-pattern-light"></div>
+    <div
+      class="
+        absolute
+        w-full
+        h-full
+        bg-hero-pattern-light
+        dark:bg-hero-pattern-dark
+      "
+    ></div>
+    <div
+      class="absolute w-full h-full bg-gradient-to-t from-white from-[-10%]"
+    ></div>
     <div class="px-4 sm:px-6 md:px-8 relative">
       <div
-        class="relative max-w-screen-xl mx-auto pt-20 sm:pt-24 lg:pt-60 flex"
+        class="
+          max-w-screen-xl
+          mx-auto
+          pt-20
+          sm:pt-24
+          lg:pt-60
+          flex
+          justify-center
+        "
       >
-        <div class="flex w-full justify-center space-x-24">
-          <div class="flex flex-col space-y-12 text-amethyst-900">
-            <div class="flex">
-              <div class="grow-0 relative">
-                <div
-                  class="
-                    w-[calc(100%+10rem)]
-                    -m-[1rem]
-                    h-2.5
-                    absolute
-                    bg-[#FAC515]
-                    top-[60%]
-                  "
-                ></div>
-                <h1
-                  class="
-                    tracking-tight
-                    leading-[7.5rem]
-                    relative
-                    mix-blend-hard-light
-                    font-serif
-                    text-[8.75rem]
-                  "
-                >
-                  Ruben
-                </h1>
-              </div>
-            </div>
-
-            <div class="flex space-x-24">
-              <div class="relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-28 h-28 top-[50%] -start-12 absolute"
-                  viewBox="0 0 178 178"
-                  fill="none"
-                  s
-                >
-                  <rect
-                    x="2.5"
-                    y="112.5"
-                    width="63"
-                    height="63"
-                    stroke="#FAC515"
-                    stroke-width="5"
-                  />
-                  <rect
-                    x="5"
-                    y="5"
-                    width="168"
-                    height="168"
-                    stroke="url(#paint0_linear_4958_403736)"
-                    stroke-width="10"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_4958_403736"
-                      x1="6.5"
-                      y1="169.5"
-                      x2="162.5"
-                      y2="29.5"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#FAC515" />
-                      <stop offset="0.505208" stop-color="white" />
-                      <stop offset="1" stop-color="#FAC515" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-                <div
-                  class="h-28 w-28 bg-amethyst-400 relative rounded-full"
-                ></div>
-              </div>
-
-              <div class="grow-0 relative">
-                <div
-                  class="
-                    w-[calc(100%+10rem)]
-                    -m-[1rem]
-                    h-2.5
-                    absolute
-                    bg-[#FAC515]
-                    top-[60%]
-                  "
-                ></div>
-                <h1
-                  class="
-                    tracking-tight
-                    leading-[7.5rem]
-                    relative
-                    mix-blend-hard-light
-                    font-serif
-                    text-[8.75rem]
-                  "
-                >
-                  Hidalgo
-                </h1>
-              </div>
-            </div>
-          </div>
-
+        <div class="flex flex-col space-y-12 text-amethyst-900 relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-48 h-48 -mt-24"
+            class="w-48 h-48 -mt-24 absolute to-0 right-0"
             viewBox="0 0 210 200"
             fill="none"
           >
@@ -171,6 +90,101 @@
               </linearGradient>
             </defs>
           </svg>
+          <div class="flex">
+            <div class="grow-0 relative">
+              <div
+                class="
+                  w-[calc(100%+10rem)]
+                  -m-[1rem]
+                  h-2.5
+                  absolute
+                  bg-[#FAC515]
+                  top-[60%]
+                "
+              ></div>
+              <h1
+                class="
+                  tracking-tight
+                  leading-[7.5rem]
+                  relative
+                  mix-blend-hard-light
+                  font-serif
+                  text-[8.75rem]
+                "
+              >
+                Ruben
+              </h1>
+            </div>
+          </div>
+
+          <div class="flex space-x-24">
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-28 h-28 top-[30%] -start-12 absolute"
+                viewBox="0 0 178 178"
+                fill="none"
+                s
+              >
+                <rect
+                  x="2.5"
+                  y="112.5"
+                  width="63"
+                  height="63"
+                  stroke="#FAC515"
+                  stroke-width="5"
+                />
+                <rect
+                  x="5"
+                  y="5"
+                  width="168"
+                  height="168"
+                  stroke="url(#paint0_linear_4958_403736)"
+                  stroke-width="10"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_4958_403736"
+                    x1="6.5"
+                    y1="169.5"
+                    x2="162.5"
+                    y2="29.5"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FAC515" />
+                    <stop offset="0.505208" stop-color="white" />
+                    <stop offset="1" stop-color="#FAC515" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div
+                class="h-28 w-28 bg-amethyst-400 relative rounded-full"
+              ></div>
+            </div>
+
+            <div class="flex flex-col space-y-6">
+              <div class="grow-0 relative">
+                <div
+                  class="w-full -m-[1rem] h-2.5 absolute bg-[#FAC515] top-[60%]"
+                ></div>
+                <h1
+                  class="
+                    tracking-tight
+                    leading-[7.5rem]
+                    relative
+                    mix-blend-hard-light
+                    font-serif
+                    text-[8.75rem]
+                  "
+                >
+                  Hidalgo
+                </h1>
+              </div>
+              <h2 class="font-serif text-black dark:text-white text-4xl">
+                Full-Stack Web Developer and UI Designer
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
