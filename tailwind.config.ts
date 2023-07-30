@@ -15,9 +15,6 @@ module.exports = {
         sans: ['Rajdhani', ...defaultTheme.fontFamily.sans],
         serif: ['ITC Garamond', ...defaultTheme.fontFamily.serif],
       },
-      maxWidth: {
-        '8xl': '88rem',
-      },
       colors: {
         amethyst: {
           25: '#FCFAFF',
