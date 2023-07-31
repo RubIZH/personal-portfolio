@@ -55,10 +55,11 @@
 
     <div
       class="
+        hidden
+        2xl:flex
         w-[1536px]
         h-12
         bg-blue-200
-        flex
         justify-center
         items-center
         text-xl

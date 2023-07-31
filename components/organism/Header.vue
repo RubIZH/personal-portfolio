@@ -22,50 +22,40 @@
         "
         data-atropos-offset="-5"
       ></div>
-      <div class="px-4 sm:px-6 md:px-8 relative">
+      <div
+        class="max-w-screen-xl mx-auto flex justify-center xl:pt-40 xl:pb-60"
+      >
         <div
           class="
-            max-w-screen-xl
-            mx-auto
-            py-20
-            sm:pt-24
-            lg:pt-40
-            flex
-            justify-center
+            flex flex-col
+            space-y-12
+            text-amethyst-900
+            dark:text-white
+            relative
           "
         >
-          <div
-            class="
-              flex flex-col
-              space-y-12
-              text-amethyst-900
-              dark:text-white
-              relative
-            "
-          >
-            <AtomRedGreenHeroSquares />
+          <AtomRedGreenHeroSquares />
 
-            <div class="flex">
-              <AtomCrossedHeroText>Ruben</AtomCrossedHeroText>
+          <div class="flex">
+            <AtomCrossedHeroText>Ruben</AtomCrossedHeroText>
+          </div>
+
+          <div class="flex space-x-24">
+            <div class="relative">
+              <AtomYellowHeroSquare />
+              <AtomHeroProfileImage />
             </div>
 
-            <div class="flex space-x-24">
-              <div class="relative">
-                <AtomYellowHeroSquare />
-                <AtomHeroProfileImage />
+            <div class="flex flex-col space-y-6">
+              <div class="flex">
+                <AtomCrossedHeroText>Hidalgo</AtomCrossedHeroText>
               </div>
-
-              <div class="flex flex-col space-y-6">
-                <div class="flex">
-                  <AtomCrossedHeroText>Hidalgo</AtomCrossedHeroText>
-                </div>
-                <h2
-                  class="font-serif text-black dark:text-white text-4xl"
-                  data-atropos-offset="2"
-                >
-                  Full-Stack Web Developer and UI Designer
-                </h2>
-              </div>
+              <h2
+                class="font-serif text-black dark:text-white text-4xl"
+                data-atropos-offset="2"
+              >
+                Full-Stack Web Developer and UI Designer
+              </h2>
             </div>
           </div>
         </div>
