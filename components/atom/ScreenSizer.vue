@@ -39,7 +39,7 @@
     >
       Screen lg
     </div>
-    <!-- <div
+    <div
       class="
         w-[1280px]
         h-12
@@ -51,7 +51,21 @@
       "
     >
       Screen xl
-    </div> -->
+    </div>
+
+    <div
+      class="
+        w-[1536px]
+        h-12
+        bg-blue-200
+        flex
+        justify-center
+        items-center
+        text-xl
+      "
+    >
+      Screen 2xl
+    </div>
   </div>
 </template>
 s
