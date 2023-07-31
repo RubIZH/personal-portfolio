@@ -19,8 +19,9 @@
                 absolute
                 w-full
                 h-full
-                bg-gradient-to-t
-                from-white from-[-10%]
+                hero-gradient
+                dark:hero-gradient-dark
+                from-[-10%]
               "
               data-atropos-offset="-5"
             ></div>
@@ -37,7 +38,13 @@
                 "
               >
                 <div
-                  class="flex flex-col space-y-12 text-amethyst-900 relative"
+                  class="
+                    flex flex-col
+                    space-y-12
+                    text-amethyst-900
+                    dark:text-white
+                    relative
+                  "
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +134,7 @@
                           font-serif
                           text-[8.75rem]
                         "
-                        data-atropos-offset="0"
+                        data-atropos-offset="2"
                       >
                         Ruben
                       </h1>
@@ -177,7 +184,7 @@
                       <div class="h-28 w-28 relative">
                         <div
                           class="
-                            -top-[3rem]
+                            -top-[3.5rem]
                             -left-[2.5rem]
                             top-0
                             bg-contain
@@ -187,6 +194,7 @@
                             h-52
                             bg-[url('assets/images/me.png')]
                           "
+                          data-atropos-offset="5"
                         ></div>
                       </div>
                     </div>
@@ -210,17 +218,18 @@
                             leading-[7.5rem]
                             relative
                             mix-blend-hard-light
+                            dark:mix-blend-normal
                             font-serif
                             text-[8.75rem]
                           "
-                          data-atropos-offset="0"
+                          data-atropos-offset="2"
                         >
                           Hidalgo
                         </h1>
                       </div>
                       <h2
                         class="font-serif text-black dark:text-white text-4xl"
-                        data-atropos-offset="0"
+                        data-atropos-offset="2"
                       >
                         Full-Stack Web Developer and UI Designer
                       </h2>
@@ -246,6 +255,9 @@ onMounted(() => {
   const myAtropos = Atropos({
     el: atroposHeaderContainer.value,
     shadow: false,
+    highlight: false,
+    rotateXMax: 17,
+    rotateYMax: 17,
   });
 });
 </script>

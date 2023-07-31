@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  body {
-    @apply bg-white dark:bg-black antialiased text-gray-500 dark:text-white;
-  }
-}
-
 @font-face {
   font-family: 'ITC Garamond';
   src: url(~/assets/fonts/ITCGaramondStd-LtNarrow.woff2) format('woff2'),
@@ -20,4 +14,18 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+
+@layer components {
+  body {
+    @apply bg-white dark:bg-black antialiased text-gray-500 dark:text-white;
+  }
+}
+
+.hero-gradient {
+  background: radial-gradient(ellipse at top, transparent 40%, white 78%);
+}
+
+:is(.dark .dark\:hero-gradient-dark) {
+  background: radial-gradient(ellipse at top, transparent 40%, black 78%);
 }
