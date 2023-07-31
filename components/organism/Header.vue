@@ -116,6 +116,7 @@
                           bg-[#FAC515]
                           top-[60%]
                         "
+                        data-atropos-offset="-2"
                       ></div>
                       <h1
                         class="
@@ -140,7 +141,7 @@
                         class="w-28 h-28 top-[30%] -start-12 absolute"
                         viewBox="0 0 178 178"
                         fill="none"
-                        s
+                        data-atropos-offset="-3"
                       >
                         <rect
                           x="2.5"
@@ -201,6 +202,7 @@
                             bg-[#FAC515]
                             top-[60%]
                           "
+                          data-atropos-offset="-2"
                         ></div>
                         <h1
                           class="
@@ -218,6 +220,7 @@
                       </div>
                       <h2
                         class="font-serif text-black dark:text-white text-4xl"
+                        data-atropos-offset="0"
                       >
                         Full-Stack Web Developer and UI Designer
                       </h2>
