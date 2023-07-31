@@ -1,6 +1,28 @@
-<tempate>
-
-
-
-
-</tempate>
+<template>
+  <div class="grow-0 relative">
+    <div
+      class="
+        w-[calc(100%+10rem)]
+        -m-[1rem]
+        h-2.5
+        absolute
+        bg-[#FAC515]
+        top-[60%]
+      "
+      data-atropos-offset="-2"
+    ></div>
+    <h1
+      class="
+        tracking-tight
+        leading-[7.5rem]
+        relative
+        mix-blend-hard-light
+        font-serif
+        text-[8.75rem]
+      "
+      data-atropos-offset="2"
+    >
+      <slot></slot>
+    </h1>
+  </div>
+</template>

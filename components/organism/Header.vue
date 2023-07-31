@@ -49,119 +49,18 @@
                   <AtomRedGreenHeroSquares />
 
                   <div class="flex">
-                    <div class="grow-0 relative">
-                      <div
-                        class="
-                          w-[calc(100%+10rem)]
-                          -m-[1rem]
-                          h-2.5
-                          absolute
-                          bg-[#FAC515]
-                          top-[60%]
-                        "
-                        data-atropos-offset="-2"
-                      ></div>
-                      <h1
-                        class="
-                          tracking-tight
-                          leading-[7.5rem]
-                          relative
-                          mix-blend-hard-light
-                          font-serif
-                          text-[8.75rem]
-                        "
-                        data-atropos-offset="2"
-                      >
-                        Ruben
-                      </h1>
-                    </div>
+                    <AtomCrossedHeroText>Ruben</AtomCrossedHeroText>
                   </div>
 
                   <div class="flex space-x-24">
                     <div class="relative">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-28 h-28 top-[30%] -start-12 absolute"
-                        viewBox="0 0 178 178"
-                        fill="none"
-                        data-atropos-offset="-3"
-                      >
-                        <rect
-                          x="2.5"
-                          y="112.5"
-                          width="63"
-                          height="63"
-                          stroke="#FAC515"
-                          stroke-width="5"
-                        />
-                        <rect
-                          x="5"
-                          y="5"
-                          width="168"
-                          height="168"
-                          stroke="url(#paint0_linear_4958_403736)"
-                          stroke-width="10"
-                        />
-                        <defs>
-                          <linearGradient
-                            id="paint0_linear_4958_403736"
-                            x1="6.5"
-                            y1="169.5"
-                            x2="162.5"
-                            y2="29.5"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stop-color="#FAC515" />
-                            <stop offset="0.505208" stop-color="white" />
-                            <stop offset="1" stop-color="#FAC515" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                      <div class="h-28 w-28 relative">
-                        <div
-                          class="
-                            -top-[3.5rem]
-                            -left-[2.5rem]
-                            top-0
-                            bg-contain
-                            absolute
-                            bg-no-repeat bg-center
-                            w-52
-                            h-52
-                            bg-[url('assets/images/me.png')]
-                          "
-                          data-atropos-offset="5"
-                        ></div>
-                      </div>
+                      <AtomYellowHeroSquare />
+                      <AtomHeroProfileImage />
                     </div>
 
                     <div class="flex flex-col space-y-6">
-                      <div class="grow-0 relative">
-                        <div
-                          class="
-                            w-full
-                            -m-[1rem]
-                            h-2.5
-                            absolute
-                            bg-[#FAC515]
-                            top-[60%]
-                          "
-                          data-atropos-offset="-2"
-                        ></div>
-                        <h1
-                          class="
-                            tracking-tight
-                            leading-[7.5rem]
-                            relative
-                            mix-blend-hard-light
-                            dark:mix-blend-normal
-                            font-serif
-                            text-[8.75rem]
-                          "
-                          data-atropos-offset="2"
-                        >
-                          Hidalgo
-                        </h1>
+                      <div class="flex">
+                        <AtomCrossedHeroText>Hidalgo</AtomCrossedHeroText>
                       </div>
                       <h2
                         class="font-serif text-black dark:text-white text-4xl"
@@ -181,19 +80,25 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Atropos from 'atropos';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const atroposHeaderContainer = ref(null);
 
+var myAtropos = null;
+
 onMounted(() => {
-  const myAtropos = Atropos({
+  myAtropos = Atropos({
     el: atroposHeaderContainer.value,
     shadow: false,
     highlight: false,
     rotateXMax: 17,
     rotateYMax: 17,
   });
+});
+
+onUnmounted(() => {
+  myAtropos.destroy();
 });
 </script>

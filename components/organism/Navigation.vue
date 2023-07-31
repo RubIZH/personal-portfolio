@@ -117,5 +117,3 @@
     </nav>
   </div>
 </template>
-
-<script setup></script>
