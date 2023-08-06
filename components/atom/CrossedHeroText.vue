@@ -19,7 +19,8 @@
         relative
         mix-blend-hard-light
         font-serif
-        text-[8.75rem]
+        lg:text-[8.75rem]
+        text-8xl
       "
       data-atropos-offset="2"
     >
