@@ -18,7 +18,7 @@
 
 @layer components {
   body {
-    @apply bg-white dark:bg-black antialiased text-gray-500 dark:text-white;
+    @apply bg-white dark:bg-black antialiased text-black dark:text-white;
   }
 }
 
