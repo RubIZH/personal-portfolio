@@ -2,7 +2,8 @@
   <div class="grow-0 relative">
     <div
       class="
-        w-[calc(100%+10rem)]
+        w-[calc(100%+2.5rem)]
+        xl:w-[calc(100%+10rem)]
         -m-[1rem]
         h-2.5
         absolute

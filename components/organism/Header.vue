@@ -23,7 +23,7 @@
         data-atropos-offset="-5"
       ></div>
       <div
-        class="max-w-screen-xl mx-auto flex justify-center xl:pt-40 xl:pb-60"
+        class="max-w-screen-xl mx-auto flex justify-center lg:pt-40 lg:pb-60"
       >
         <div
           class="

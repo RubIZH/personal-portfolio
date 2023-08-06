@@ -5,7 +5,8 @@
         w-[640px]
         h-12
         bg-blue-500
-        flex
+        hidden
+        sm:flex
         justify-center
         items-center
         text-xl
@@ -18,7 +19,8 @@
         w-[768px]
         h-12
         bg-blue-400
-        flex
+        hidden
+        md:flex
         justify-center
         items-center
         text-xl
@@ -31,7 +33,8 @@
         w-[1024px]
         h-12
         bg-blue-300
-        flex
+        hidden
+        lg:flex
         justify-center
         items-center
         text-xl
@@ -41,10 +44,11 @@
     </div>
     <div
       class="
+        hidden
+        xl:flex
         w-[1280px]
         h-12
         bg-blue-200
-        flex
         justify-center
         items-center
         text-xl
