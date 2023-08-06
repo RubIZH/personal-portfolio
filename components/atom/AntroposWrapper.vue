@@ -24,6 +24,7 @@ onMounted(() => {
     highlight: false,
     rotateXMax: 17,
     rotateYMax: 17,
+    rotateTouch: false,
   });
 });
 
