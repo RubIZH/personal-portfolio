@@ -35,7 +35,17 @@
           rounded-b-lg
         "
       ></div>
-      <h3 class="font-serif text-3xl relative group-hover:scale-105 transition">
+      <h3
+        class="
+          font-serif
+          text-2xl
+          lg:text-3xl
+          text-center
+          relative
+          group-hover:scale-105
+          transition
+        "
+      >
         Impulse Body Fitness
       </h3>
     </div>
