@@ -20,7 +20,7 @@
         >
           <h2 class="flex w-full text-left text-4xl font-semibold">Projects</h2>
           <div class="grid grid-cols-3 gap-4">
-            <div class="w-full">
+            <div class="w-full group">
               <div
                 class="
                   bg-green-500
@@ -56,7 +56,15 @@
                     rounded-b-lg
                   "
                 ></div>
-                <h3 class="font-serif text-3xl relative">
+                <h3
+                  class="
+                    font-serif
+                    text-3xl
+                    relative
+                    group-hover:scale-105
+                    transition
+                  "
+                >
                   Impulse Body Fitness
                 </h3>
               </div>
