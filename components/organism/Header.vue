@@ -55,9 +55,9 @@
           </div>
 
           <div class="flex space-x-0 xl:space-x-24">
-            <div class="relative hidden xl:block">
+            <div class="relative">
               <AtomYellowHeroSquare />
-              <AtomHeroProfileImage />
+              <AtomHeroProfileImage class="hidden xl:flex" />
             </div>
 
             <div class="flex flex-col lg:space-y-6">

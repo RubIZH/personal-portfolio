@@ -1,7 +1,15 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="w-28 h-28 top-[50%] -start-12 absolute"
+    class="
+      w-16
+      h-16
+      sm:w-20 sm:h-20
+      top-12
+      -start-10
+      absolute
+      xl:w-28 xl:h-28 xl:top-[50%] xl:-start-12
+    "
     viewBox="0 0 178 178"
     fill="none"
     data-atropos-offset="-3"
