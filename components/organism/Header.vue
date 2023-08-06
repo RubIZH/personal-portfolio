@@ -36,18 +36,18 @@
         >
           <AtomRedGreenHeroSquares />
 
-          <div class="flex">
+          <div class="flex justify-center">
             <AtomCrossedHeroText>Ruben</AtomCrossedHeroText>
           </div>
 
           <div class="flex space-x-24">
-            <div class="relative">
+            <div class="relative hidden xl:block">
               <AtomYellowHeroSquare />
               <AtomHeroProfileImage />
             </div>
 
-            <div class="flex flex-col space-y-6">
-              <div class="flex">
+            <div class="flex flex-col">
+              <div class="flex justify-center">
                 <AtomCrossedHeroText>Hidalgo</AtomCrossedHeroText>
               </div>
               <h2
