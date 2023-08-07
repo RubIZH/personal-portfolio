@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full aspect-square flex justify-center items-center"
+    class="w-full aspect-square flex justify-center items-start"
     ref="tagCloudContainer"
   ></div>
 </template>
@@ -23,7 +23,7 @@ const texts = [
   'REST',
 ];
 const options = {
-  radius: 250,
+  radius: 200,
 };
 
 onMounted(() => {
