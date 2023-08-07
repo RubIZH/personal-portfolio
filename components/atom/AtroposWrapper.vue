@@ -11,7 +11,6 @@
 </template>
 <script setup lang="ts">
 import Atropos from 'atropos';
-import { ref, onMounted, onUnmounted } from 'vue';
 
 const atroposHeaderContainer = ref(null);
 

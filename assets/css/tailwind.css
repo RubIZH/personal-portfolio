@@ -29,3 +29,16 @@
 :is(.dark .dark\:hero-gradient-dark) {
   background: radial-gradient(ellipse at top, transparent 40%, black 78%);
 }
+
+.tagcloud {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tagcloud--item {
+  background-color: #ddc2f0;
+  color: #733a8f;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+}

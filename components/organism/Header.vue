@@ -1,5 +1,5 @@
 <template>
-  <AtomAntroposWrapper>
+  <AtomAtroposWrapper>
     <header class="relative w-full">
       <div
         class="
@@ -83,5 +83,5 @@
         </div>
       </div>
     </header>
-  </AtomAntroposWrapper>
+  </AtomAtroposWrapper>
 </template>

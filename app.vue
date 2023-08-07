@@ -78,6 +78,7 @@
                 </p>
               </div>
             </article>
+            <AtomTagCloud></AtomTagCloud>
           </div>
         </section>
       </main>
