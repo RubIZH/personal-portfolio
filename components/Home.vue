@@ -1,9 +1,10 @@
 <template>
   <OrganismNavigation />
   <div class="mb-20 sm:pb-32 md:pb-60 -mt-[3.68rem] overflow-visible">
-    <OrganismHeader />
+    <OrganismHeader ref="header" />
     <main>
       <section
+        ref="projects"
         class="
           max-w-screen-xl
           mx-auto
@@ -27,6 +28,7 @@
         </div>
       </section>
       <section
+        ref="aboutMe"
         class="
           max-w-screen-xl
           mx-auto
@@ -83,3 +85,13 @@
     </main>
   </div>
 </template>
+
+<script setup>
+const header = ref(null);
+const projects = ref(null);
+const aboutMe = ref(null);
+
+const headerSize = useElementSize(header);
+const projectsSize = useElementSize(projects);
+const aboutMeSize = useElementSize(aboutMe);
+</script>
