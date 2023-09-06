@@ -28,7 +28,6 @@
         </div>
       </section>
       <section
-        ref="aboutMe"
         class="
           max-w-screen-xl
           mx-auto
@@ -89,24 +88,27 @@
 <script setup lang="ts">
 const header = ref(null);
 const projects = ref(null);
-const aboutMe = ref(null);
 
 const headerSize = useElementSize(header);
 const projectsSize = useElementSize(projects);
-const aboutMeSize = useElementSize(aboutMe);
 const windowScroll = useWindowScroll();
 
 function getActiveSection(windowY) {
-  if (windowY > headerSize.height) {
-    //In projects
+  if (windowY < headerSize.height.value) {
+    console.log('Home');
   }
 
-  if (windowY > headerSize.height + projectsSize.height) {
-    //In about me
+  if (windowY > headerSize.height.value + projectsSize.height.value) {
+    console.log('About me :)');
+    return;
+  }
+
+  if (windowY > headerSize.height.value) {
+    console.log('Projects');
   }
 }
 
 watch(windowScroll.y, (newWindowY) => {
-  console.log(`${newWindowY}`);
+  getActiveSection(newWindowY);
 });
 </script>
