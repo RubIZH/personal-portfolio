@@ -15,11 +15,26 @@
       "
     >
       <div class="flex items-baseline space-x-3">
-        <AtomSelectedNavigationLink>Home</AtomSelectedNavigationLink>
-        <AtomNavigationLink> Projects</AtomNavigationLink>
-        <AtomNavigationLink>About me</AtomNavigationLink>
+        <template v-for="link in links">
+          <AtomSelectedNavigationLink v-if="currentSection === link.name">
+            {{ link.name }}</AtomSelectedNavigationLink
+          >
+          <AtomNavigationLink v-else> {{ link.name }}</AtomNavigationLink>
+        </template>
       </div>
       <MoleculeThemeToggle />
     </nav>
   </div>
 </template>
+
+<script setup lang="ts">
+const links = ref([
+  { name: 'Home' },
+  { name: 'Projects' },
+  { name: 'About me' },
+]);
+
+const props = defineProps({
+  currentSection: String,
+});
+</script>

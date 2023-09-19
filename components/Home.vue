@@ -1,5 +1,5 @@
 <template>
-  <OrganismNavigation />
+  <OrganismNavigation :currentSection="currentSection" />
   <div class="mb-20 sm:pb-32 md:pb-60 -mt-[3.68rem] overflow-visible">
     <OrganismHeader ref="header" />
     <main>
@@ -92,19 +92,30 @@ const projects = ref(null);
 const headerSize = useElementSize(header);
 const projectsSize = useElementSize(projects);
 const windowScroll = useWindowScroll();
+const windowSize = useWindowSize();
+
+const currentSection = ref('Home');
 
 function getActiveSection(windowY) {
-  if (windowY < headerSize.height.value) {
-    console.log('Home');
+  let windowYWithAddedOffset = windowY + windowSize.height.value * 0.15;
+
+  console.log('window Y ' + windowY);
+  console.log('window Y + offset ' + windowYWithAddedOffset);
+
+  if (windowYWithAddedOffset < headerSize.height.value) {
+    currentSection.value = 'Home';
   }
 
-  if (windowY > headerSize.height.value + projectsSize.height.value) {
-    console.log('About me :)');
+  if (
+    windowYWithAddedOffset >
+    headerSize.height.value + projectsSize.height.value
+  ) {
+    currentSection.value = 'About me';
     return;
   }
 
-  if (windowY > headerSize.height.value) {
-    console.log('Projects');
+  if (windowYWithAddedOffset > headerSize.height.value) {
+    currentSection.value = 'Projects';
   }
 }
 
