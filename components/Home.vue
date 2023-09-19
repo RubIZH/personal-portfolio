@@ -94,13 +94,10 @@ const projectsSize = useElementSize(projects);
 const windowScroll = useWindowScroll();
 const windowSize = useWindowSize();
 
-const currentSection = ref('Home');
+const currentSection = ref('');
 
-function getActiveSection(windowY) {
-  let windowYWithAddedOffset = windowY + windowSize.height.value * 0.15;
-
-  console.log('window Y ' + windowY);
-  console.log('window Y + offset ' + windowYWithAddedOffset);
+function getActiveSection(windowY: Double) {
+  let windowYWithAddedOffset = windowY + windowSize.height.value * 0.2;
 
   if (windowYWithAddedOffset < headerSize.height.value) {
     currentSection.value = 'Home';
@@ -118,6 +115,18 @@ function getActiveSection(windowY) {
     currentSection.value = 'Projects';
   }
 }
+
+function setActiveSectionInitialValue() {
+  if (windowScroll.y.value > 0) {
+    return;
+  }
+
+  currentSection.value = 'Home';
+}
+
+onMounted(() => {
+  setActiveSectionInitialValue();
+});
 
 watch(windowScroll.y, (newWindowY) => {
   getActiveSection(newWindowY);

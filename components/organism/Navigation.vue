@@ -14,13 +14,17 @@
         border-x border-b border-gray-400
       "
     >
-      <div class="flex items-baseline space-x-3">
-        <template v-for="link in links">
-          <AtomSelectedNavigationLink v-if="currentSection === link.name">
-            {{ link.name }}</AtomSelectedNavigationLink
-          >
-          <AtomNavigationLink v-else> {{ link.name }}</AtomNavigationLink>
-        </template>
+      <div class="flex items-baseline space-x-3 bg-blue-500 relative">
+        <AtomNavigationLink ref="homeLink" class="relative z-[1]"
+          >Home</AtomNavigationLink
+        >
+        <AtomNavigationLink ref="projectsLink" class="relative z-[1]"
+          >Projects</AtomNavigationLink
+        >
+        <AtomNavigationLink ref="aboutMeLink" class="relative z-[1]"
+          >About me</AtomNavigationLink
+        >
+        <div class="absolute rounded-full bg-green-500 h-[24px] w-[37px]"></div>
       </div>
       <MoleculeThemeToggle />
     </nav>
@@ -28,6 +32,14 @@
 </template>
 
 <script setup lang="ts">
+const homeLink = ref(null);
+const projectsLink = ref(null);
+const aboutMeLink = ref(null);
+
+const homeLinkSize = useElementSize(homeLink);
+const projectsLinkSize = useElementSize(projectsLink);
+const aboutMeLinkSize = useElementSize(aboutMeLink);
+
 const links = ref([
   { name: 'Home' },
   { name: 'Projects' },
